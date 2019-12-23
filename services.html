@@ -1,0 +1,295 @@
+<! DOCTYPE html>
+
+<Html>
+
+<!-- SERVICES -->
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<!-- set the position to relative and pixel location -->
+
+<body>
+
+<div>
+    <h6>
+        <bold>
+            DGM RESTORATION LLC
+        </bold>
+    </h6>
+
+    <ul class="nav">
+        <!-- <li><a href='#aboutus'>About Us</a></li> -->
+        <li><a href='home.html'><u>Home</u></a></li>
+        <li class="current"><a href='services.html'><u>Services</u></a></li>
+        <li><a href='projects.html'><u>Projects</u></a></li>
+        <li><a href='reviews.html'><u>Reviews</u></a></li>
+        <li><a href='contact.html'><u>Contact</u></a></li>
+    </ul>
+</div>
+
+<!-- <div id='services'>
+    <h4>SERVICES</h4>
+</div> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $("h5, p").addClass("hide");
+    });
+
+</script>
+
+<script>
+
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h5, p").addClass("show");
+        });
+    });
+
+</script>
+
+
+
+<style>
+
+    @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+    body {
+        font-family: "Fjalla One", sans-serif;
+        /*background-color: #ffffff; */
+    }
+
+    h6 {
+        width: 100%;
+        border-width: 3px 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: "Fjalla One", sans-serif;
+        margin-left: 100px;
+        text-align: left;
+        font-size: 20px;
+        color: navy;
+    }
+
+
+    .nav {
+        width: 100%;
+        /*border: 1px solid #000; */
+        border-width: 3px 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: #ffbf00;
+        /*background-color: #ffffff; */
+    }
+
+    .nav li {
+        display: inline;
+        color: #000;
+        font-size: 20px;
+    }
+
+    a {
+        color: #a67c00;
+        /*color: navy;*/
+        /* background-color: #f0c98d; */
+        /*background-color: whitesmoke; */
+
+    }
+
+    .nav a {
+        display: inline-block;
+        border-radius: 10px;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+
+    .nav li a:hover {
+        /*background-color: #d3d3d3; */
+        background-color: #4cbdce;
+    }
+
+    .current,
+    nav li a:hover {
+        /* styles go here */
+        background-color: #4cbdce;
+    }
+
+
+    h5{
+        margin:0;
+        padding:0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+
+    img {
+        width: 20%;
+        /* align-items: center; */
+        display:block;
+        margin: 0 auto;
+    }
+
+
+    #kitchen.slide-left {
+        width: 100%;
+        overflow: hidden ;
+    }
+
+    #kitchen.slide-left p {
+        animation: slide-left 2s;
+        /* margin-right: 0%; */
+    }
+
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+
+    #bathroom.slide-left {
+        width: 100%;
+        overflow: hidden ;
+    }
+
+    #bathroom.slide-left p {
+        animation: slide-left 4s;
+        /*animation-delay: 1s; */
+
+        /* margin-right: 0%; */
+    }
+
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    #interior.slide-left {
+        width: 100%;
+        overflow: hidden ;
+    }
+
+    #interior.slide-left p {
+        animation: slide-left 6s;
+        /* animation-delay: 2s; */
+    }
+
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    #exterior.slide-left {
+        width: 100%;
+        overflow: hidden ;
+    }
+
+    #exterior.slide-left p {
+        animation: slide-left 8s;
+        /* animation-delay: 3s; */
+    }
+
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+</style>
+
+
+<div class="image-wrapper">
+    <img src="https://dgmrestoration.s3.amazonaws.com/man-painting-animaiton.gif" alt="painting">
+</div>
+
+<button style="margin-left: 650px ; color:red ; padding: 5px ; font-weight: bold; font-size: medium">
+    Get Services
+</button>
+
+<div style="color:black;text-align:center;font-size: 20px;">
+    DGM Restoration will handle all your interior and exterior remodeling projects.
+    Click <span style="color:red">"Get Services"</span> to find out more.
+</div>
+
+
+<h5 id="kitchen" class="slide-left" style="font-size: 25px">
+
+    <p><font color="red">KITCHEN:</font>   Kitchen Floor & Wall Tiling - Kitchen Cabinetry - Kitchen Appliance Installation & Hookup </p>
+
+</h5>
+<h5 id="bathroom" class="slide-left" style="font-size:25px">
+
+    <p><font color="red">BATHROOM:</font>   Room & Shower Tiling - Bathroom Vanity Installation - All Bathroom Fittings (Toilet, Bathtub, & Shower)  </p>
+
+</h5>
+<h5 id="interior" class="slide-left" style="font-size: 25px">
+
+    <p><font color="red">INTERIOR ROOM:</font>   Painting - Wall Trimming - Hardwood Flooring - Electrical Fixture Installaton </p>
+
+</h5>
+<h5 id="exterior" class="slide-left" style="font-size:25px">
+
+    <p><font color="red">EXTERIOR:</font>   Patio Renovaton & Deck Framing - Exterior Painting - Fencing & Gate Installation</p>
+
+</h5>
+
+
+
+
+</body>
+</Html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

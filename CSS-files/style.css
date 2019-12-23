@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    background-color: #ffffff;
+}
+
+h6 {
+    width: 100%;
+    border-width: 3px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 20px;
+    color: navy;
+}
+
+
+.nav {
+    width: 100%;
+    /*border: 1px solid #000; */
+    border-width: 3px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #ffbf00;
+    /*background-color: #ffffff; */
+}
+
+.nav li {
+    display: inline;
+    color: #000;
+    font-size: 20px;
+}
+
+a {
+    color: #a67c00;
+    /*color: navy;*/
+    /* background-color: #f0c98d; */
+    /*background-color: whitesmoke; */
+
+}
+
+.nav a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+.nav li a:hover {
+    /*background-color: #d3d3d3; */
+    background-color: #4cbdce;
+}
+
+.current,
+nav li a:hover {
+    /* styles go here */
+    background-color: #4cbdce;
+}
+
+
+
+.container1 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    max-width: 600px;
+}
+
+.button {
+    float: left;
+    position: relative;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    color: #000080;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+span {
+    transform: skew(0deg);
+    display: block;
+    float: left;
+    text-shadow: #d3d3d3 1px 1px, #d3d3d3 2px 2px, #d3d3d3 3px 3px,
+    #d3d3d3 4px 4px;
+}
+}
+
+h1 {
+    color: #000080;
+    text-transform: none;
+    font-size: 42px;
+    /*font-size: 32px; */
+    margin: 0;
+    line-height: 47px;
+    letter-spacing: 2px;
+}
+
+.title {
+    transform: translateX(-50%) rotate(-5deg);
+    display: block;
+    float: left;
+    left: 50%;
+    position: relative;
+    color: #000080;
+span {
+    transform: skew(0deg);
+    display: block;
+    float: left;
+    text-shadow: #d3d3d3 1px 1px, #d3d3d3 2px 2px, #d3d3d3 3px 3px,
+    #d3d3d3 4px 4px, #d3d3d3 5px 5px, #d3d3d3 6px 6px;
+    min-width: 10px;
+    min-height: 10px;
+    position: relative;
+}
+}
+
+
+
+.blue {
+    color: #000080;
+}
+
+#brush {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    cursor: pointer;
+}
+
+h1.shadow {
+    font-size: 52px;
+}
+
+h2.shadow {
+    color: navy;
+    /*font-size: 40px; */
+    font-size: 30px;
+}
+
+h3 {
+    color: navy;
+    font-size: 24px;
+}
+
+h4 {
+    color: navy;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    background-size: auto;
+    background-position: center;
+    background-color: whitesmoke;
+    border-radius: 0px;
+}
+
+h5 {
+    color: navy;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    background-size: auto;
+    background-position: center;
+}
+
+
+p {
+    line-height: 1.6;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.servicelist li {
+    line-height: 1.6;
+    color: black;
+    font-size: 20px;
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px #d3d3d3;
+}
+
+.heading {
+    border: 2px white;
+    padding: 25px;
+    background: url("https://s3.amazonaws.com/dgmrestoration/kitchen10.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #dcdcdc;
+}
+
+.centertext {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.number {
+    position: relative;
+    bottom: 85px;
+    right: 50px;
+}
+
+.center {
+    margin-left: 400px;
+     /*top: 100;  */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column1 {
+    flex: 20%;
+    padding: 5px;
+}
+
+.column2 {
+    flex: 25%;
+    padding: 5px;
+}
+
+.moveimage
+{
+    position: relative;
+    top: 7px;
+}
+
+/* Container holding the image and the text */
+.container2 {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    font-family: "Fjalla One", sans-serif;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    background-color: navy;
+    color: white;
+    font-weight:bold;
+    font-size:20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* End of CSS file for index.html */
+

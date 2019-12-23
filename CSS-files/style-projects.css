@@ -1,0 +1,280 @@
+
+
+/* STYLE-PROJECTS.CSS */
+/* Grid System */
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+body {
+    font-family: "Fjalla One", sans-serif;
+}
+
+h6 {
+    width: 100%;
+    border-width: 3px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 20px;
+    color: navy;
+}
+
+
+.nav {
+    width: 100%;
+    /*border: 1px solid #000; */
+    border-width: 3px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #ffbf00;
+}
+
+.nav li {
+    display: inline;
+    color: #000;
+    font-size: 20px;
+}
+
+a {
+    color: #a67c00;
+}
+
+.nav a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+
+.nav li a:hover {
+    background-color: #4cbdce;
+}
+
+.current,
+nav li a:hover {
+    /* styles go here */
+    background-color: #4cbdce;
+}
+
+
+.gridrow,
+.gridcolumn {
+    box-sizing: border-box;
+}
+
+.gridrow:before,
+.gridrow:after {
+    content: "";
+    display: table;
+}
+
+.gridrow:after {
+    clear: both;
+}
+
+.gridcolumn {
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.gridcolumn + .gridcolumn {
+    margin-left: 0%;
+}
+
+.gridcolumn-1 {
+    width: 8.33333333333%;
+}
+
+.gridcolumn-2 {
+    width: 16.6666666666%;
+}
+
+.gridcolumn-3 {
+    width: 24.9999999999%;
+}
+
+.gridcolumn-4 {
+    width: 33.3333333333%;
+}
+
+.gridcolumn-5 {
+    width: 41.6666666666%;
+}
+
+.gridcolumn-6 {
+    width: 50%;
+}
+
+.gridcolumn-7 {
+    width: 58.3333333333%;
+}
+
+.gridcolumn-8 {
+    width: 66.1333333333%;
+}
+
+.gridcolumn-9 {
+    width: 74.6%;
+}
+
+.gridcolumn-10 {
+    width: 83.3333333333%;
+}
+
+.gridcolumn-11 {
+    width: 91.5333333333%;
+}
+
+.gridcolumn-12 {
+    width: 100%;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .gridcolumn-1,
+    .gridcolumn-2,
+    .gridcolumn-3,
+    .gridcolumn-4,
+    .gridcolumn-5,
+    .gridcolumn-6,
+    .gridcolumn-7,
+    .gridcolumn-8,
+    .gridcolumn-9,
+    .gridcolumn-10,
+    .gridcolumn-11,
+    .gridcolumn-12 {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+
+    .gridcolumn + .gridcolumn {
+        margin-left: 0;
+    }
+}
+/* Styling */
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Layout For Smaller Screens */
+.imgx {
+    display: block;
+    margin: 0 auto 0 auto;
+    /* Centred */
+    width: 100%;
+    border-bottom: solid 7px #bf101a;
+}
+
+.gridcolumn {
+    border: 0px solid #ccc;
+    color: #777;
+    padding: 10px;
+    min-height: 30px;
+}
+
+.gridrow {
+    margin-bottom: 0px;
+}
+
+.gridrow:last-child {
+    margin-bottom: 0;
+}
+
+.gridcolumn .gridcolumn {
+    color: #5c5c5c;
+    border-color: #000;
+}
+
+@media only screen and (max-width: 1000px) {
+    .gridrow {
+        margin-bottom: 0px;
+    }
+
+    .gridcolumn {
+        margin-bottom: 0px;
+    }
+
+    .gridrow:last-child .gridcolumn:last-child {
+        margin-bottom: 0px;
+    }
+
+    .imgx {
+        padding: 0 2em 0 2em;
+        width: 100%;
+    }
+}
+
+
+
+
+ /* Tabs */
+
+.tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.tabs label {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    color: #fff;
+    background: dimgray;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    -webkit-transition: background ease 0.2s;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab {
+    -webkit-box-ordinal-group: 100;
+    -ms-flex-order: 99;
+    order: 99;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background: brown;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}

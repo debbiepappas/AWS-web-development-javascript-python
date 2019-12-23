@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>DGM Restoration LLC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+      <div class="heading">
+        <h6 class="shadow">
+            <bold>
+                DGM RESTORATION LLC
+            </bold>
+        </h6>
+
+        <ul class="nav">
+            <!-- <li><a href='#aboutus'>About Us</a></li> -->
+            <li class="current"><a href='home.html'><u>Home</u></a></li>
+            <li><a href='services.html'><u>Services</u></a></li>
+            <li><a href='projects.html'><u>Projects</u></a></li>
+            <li><a href='reviews.html'><u>Reviews</u></a></li>
+            <li><a href='contact.html'><u>Contact</u></a></li>
+        </ul>
+
+        <!-- Reference the brush and title -->
+        <img id="brush" src="https://s3.amazonaws.com/dgmrestoration/brush4.png">
+
+        <section class="container1">
+             <h1>
+                <span class="title">Don't wait !</span>
+                 <span class="title">Eye-catching remodeling</span>
+                 <span class="title">at a low price !</span>
+            </h1>
+            <div class="button"><img src="click.gif"/></div>
+        </section>
+        <!-- Script for brush and letter animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $(".title").lettering();
+                $(".button").lettering();
+             });
+
+            $(document).ready(function() {
+                animation();
+            }, 1000);
+            $('.button').click(function() {
+                animation();
+            });
+
+            function animation() {
+                let start = Date.now();
+                let timer = setInterval(function() {
+                    let timePassed = Date.now() - start;
+                    var brush = document.getElementById('brush')
+                    brush.style.left = timePassed / 3 + 'px';
+                    if (timePassed > 3000) clearInterval(timer);
+                }, 20);
+                sleep(1000);
+                var title1 = new TimelineMax();
+                title1.to(".button", 0, {
+                    visibility: 'hidden',
+                    opacity: 0
+                })
+                title1.staggerFromTo(".title span", 0.5, {
+                    ease: Back.easeOut.config(1.7),
+                    opacity: 0,
+                    bottom: -80
+                }, {
+                    ease: Back.easeOut.config(1.7),
+                    opacity: 1,
+                    bottom: 0
+                }, 0.05);
+                title1.to(".button", 0.2, {
+                    visibility: 'visible',
+                    opacity: 1
+                })
+            }
+
+            function sleep(milliseconds) {
+                var start = new Date().getTime();
+                for (var i = 0; i < 1e7; i++) {
+                    if ((new Date().getTime() - start) > milliseconds) {
+                        break;
+                    }
+                }
+            }
+        </script>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <h2 class="shadow">
+            <bold>
+                <br />
+                <br />
+                <br />
+                <br />
+                <center>DGM Restoration LLC</center>
+                <center>A Home Remodeling Company Serving Northern New Jersey</center>
+            </bold>
+        </h2>
+          <br />
+        <img src="https://s3.amazonaws.com/dgmrestoration/phone1.jpg" class="center">
+
+        <h2 class="shadow">
+            <bold>
+                <center>
+                    <div class="number">&nbsp;&nbsp;&nbsp;Owner Salvador Puentes<br>201-362-1656</div>
+                </center>
+            </bold>
+        </h2>
+
+    </div>
+    <div>
+        <p style="font-size: 30px; text-align: center;"><u>About Us</u></p>
+        <p style="font-size: 20px; text-align: center;">
+            DGM Restoration is a family owned home remodeling company.<br> They have over 20 years expereince
+            remodeling kitchen, bathroom, and all interior and exterior home structures.<br>
+            They are based in New Jersey and welcome projects in the tristate area.
+        </p>
+    <div>
+        <p style="font-size: 12px; text-align: left;">© 2019 • Web Design and Development by Debbie Pappas •
+            <a href="https://www.linkedin.com/in/debbie-pappas-systems/">Linkedin Profile</a></p>
+    </div>
+    </div>
+    </body>
+    </html>
