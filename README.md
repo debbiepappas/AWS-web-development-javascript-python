@@ -1,6 +1,7 @@
-﻿## DGM Website Development
+## DGM Website Development
 
-#### Complete the following steps to create a website for a small business that will text and email the owner :
+#### Complete the following steps to create a website for a small business that will text and email the owner. The website is 
+#### <http://www.dgmrestoration.com>
 
 * **Note :** *the business in this example is a restoration company that decided not to pay for texting in the future , therefore, the code for 'texting' is disabled ( commented out ).*  
 
