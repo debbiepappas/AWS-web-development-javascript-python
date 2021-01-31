@@ -3,7 +3,7 @@
 #### Complete the following steps to create a website for a small business that will text and email the owner. The website is 
 #### <https://dgm-app.herokuapp.com>
 
-* **Note :** *the business in this example is a restoration company that decided not to pay for texting in the future , therefore, the code for 'texting' is disabled (commented out). Other options that are less expensive to twillio and EC2 are found in https://https://www.serverless.com/flask. The website was migrated to https://dgm-app.herokuapp.com/ to save on cost. *  
+* **Note :** *the business in this example is a restoration company that decided not to pay for texting in the future , therefore, the code for 'texting' is disabled (commented out). Other options that are less expensive to twillio and EC2 are found in https://https://www.serverless.com/flask. The website was migrated to https://dgm-app.herokuapp.com/ to save on cost.*  
 
 1. Start an Ubuntu EC2 instance. Assign an elastic IP address. Configure the security group to allow for inbound ssh and http traffic. 
 2. Log in as root and install python, pip, flask and twilo. Twilio code will be used for texting. 
